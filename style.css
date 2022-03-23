@@ -1,0 +1,84 @@
+body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  background-image: url("https://source.unsplash.com/1600x900/?cloud/random");
+}
+
+.card {
+  background: rgba(46, 46, 46, 0.816);
+
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  font-family: "Arial Narrow Bold", sans-serif;
+  border-style: outset;
+
+  color: white;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  word-spacing: 10px;
+  align-items: center;
+}
+
+.search-bar {
+  border-radius: 7px;
+  width: 200px;
+  height: 20px;
+  color: rgb(8, 51, 51);
+  font-weight: bold;
+  font-size: 100%;
+  font-family: inherit;
+}
+button {
+  border-radius: 7px;
+  height: 25px;
+  margin: 0.5em;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background-color: chocolate;
+}
+
+h1.temp {
+  margin: 0%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 4%;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading......";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+#footer1 {
+  justify-content: center;
+  text-align: center;
+  background-color: antiquewhite;
+  font-weight: bolder;
+}
